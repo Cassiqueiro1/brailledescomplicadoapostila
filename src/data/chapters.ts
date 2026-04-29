@@ -11,7 +11,14 @@ export type Block =
   | { type: "image"; key: string; alt: string }
   | { type: "video"; url: string; label: string }
   | { type: "callout"; text: string }
-  | { type: "interactive-cell" };
+  | { type: "interactive-cell" }
+  | {
+      type: "static-cells";
+      ariaLabel?: string;
+      pairs?: boolean;
+      groups: { label?: string; cells: { dots: number[]; caption?: string }[] }[];
+    }
+  | { type: "link"; url: string; label: string; external?: boolean };
 
 export interface Chapter {
   id: string;
