@@ -375,6 +375,16 @@ export const CHAPTERS: Chapter[] = [
         ],
       },
       {
+        type: "static-cells",
+        ariaLabel: "Celas correspondentes aos esquemas associativos",
+        groups: [
+          { cells: [{ dots: [2, 3, 4, 5], caption: "Pontos 2, 3, 4, 5" }] },
+          { cells: [{ dots: [1, 2, 4, 5], caption: "Pontos 1, 2, 4, 5" }] },
+          { cells: [{ dots: [1, 2, 3], caption: "Pontos 1, 2, 3" }] },
+          { cells: [{ dots: [1, 3, 5], caption: "Pontos 1, 3, 5" }] },
+        ],
+      },
+      {
         type: "p",
         text: "Essas associações não são decorativas. Elas constroem um repertório mental que será usado depois, quando as letras começarem a aparecer. O aprendiz deixa de pensar em números de pontos e passa a reconhecer formatos familiares.",
       },
