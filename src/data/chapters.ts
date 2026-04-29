@@ -529,7 +529,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Quando se inicia a transição da escala ampliada para a leitura no papel, essa passagem precisa ser cuidadosa. Recomenda-se começar com papel mais liso, como acetato em espaçamento duplo, evitando o interponto. Mantém-se espaço duplo entre palavras e entre linhas. Isso facilita a discriminação tátil enquanto a leitura ainda está se consolidando.",
       },
-      { type: "image", key: "BRAILLE_ACETATO", alt: "Braille em acetato ou papel com espaçamento maior." },
+      { type: "image", key: "BRAILLE_ACETATO", alt: "Arte gráfica da palavra Braille em Braille com espaçamento maior." },
       {
         type: "p",
         text: "Inicia-se com palavras simples e isoladas, formadas apenas pelas letras que já foram exploradas na escala ampliada. Essas palavras aparecem organizadas em linhas bem espaçadas no papel, permitindo que o aprendiz faça a transposição entre o que sente no papel e o que já conhece no material ampliado. Nesse momento, a escala ampliada permanece presente como recurso de apoio e espelhamento. A proposta é ler no papel e reproduzir no material ampliado, ou montar no material e localizar a mesma configuração no papel. Essa correspondência constante fortalece a segurança tátil, consolida o reconhecimento dos padrões e ajuda o aprendiz a compreender que se trata do mesmo sistema apresentado em tamanhos diferentes.",
