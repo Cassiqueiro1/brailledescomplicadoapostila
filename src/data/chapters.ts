@@ -719,7 +719,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "No contexto do Braille, transcrição é o ato de converter o que está escrito em cada cela Braille para a escrita em tinta, registrando a palavra correspondente acima da linha em Braille. Essa escrita é feita com caneta, em letra cursiva, unindo as letras para formar a palavra completa, e não letras isoladas. A transcrição não é uma correção do que foi escrito em Braille. Ela deve respeitar exatamente o que está registrado, inclusive possíveis erros, omissões ou trocas feitas por quem escreveu. O objetivo é converter fielmente o que está no Braille para a tinta, permitindo que quem enxerga acompanhe a leitura do texto tal como ele foi produzido.",
       },
-      { type: "image", key: "TRANSCRICAO", alt: "Foto da transcrição feita por mãos." },
+      { type: "image", key: "TRANSCRICAO", alt: "Arte grafica de maos transcrevendo Braille" },
     ],
   },
   {
