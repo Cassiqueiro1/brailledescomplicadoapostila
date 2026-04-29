@@ -2,8 +2,9 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { CHAPTERS, getChapterBySlug, type Block } from "@/data/chapters";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { BrailleCell } from "@/components/BrailleCell";
+import { BrailleStaticCells } from "@/components/BrailleStaticCells";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, ArrowUp, BookOpen } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUp, BookOpen, ExternalLink } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 export default function Chapter() {
@@ -132,5 +133,27 @@ function BlockRender({ block }: { block: Block }) {
       );
     case "interactive-cell":
       return <BrailleCell />;
+    case "static-cells":
+      return (
+        <BrailleStaticCells
+          groups={block.groups}
+          pairs={block.pairs}
+          ariaLabel={block.ariaLabel}
+        />
+      );
+    case "link":
+      return (
+        <p>
+          <a
+            href={block.url}
+            target={block.external ? "_blank" : undefined}
+            rel={block.external ? "noreferrer" : undefined}
+            className="inline-flex items-center gap-2 font-medium text-primary underline underline-offset-4 hover:text-primary-hover"
+          >
+            {block.label}
+            {block.external && <ExternalLink className="h-4 w-4" aria-hidden />}
+          </a>
+        </p>
+      );
   }
 }

@@ -11,7 +11,14 @@ export type Block =
   | { type: "image"; key: string; alt: string }
   | { type: "video"; url: string; label: string }
   | { type: "callout"; text: string }
-  | { type: "interactive-cell" };
+  | { type: "interactive-cell" }
+  | {
+      type: "static-cells";
+      ariaLabel?: string;
+      pairs?: boolean;
+      groups: { label?: string; cells: { dots: number[]; caption?: string }[] }[];
+    }
+  | { type: "link"; url: string; label: string; external?: boolean };
 
 export interface Chapter {
   id: string;
@@ -324,6 +331,18 @@ export const CHAPTERS: Chapter[] = [
           "Por fim, retire apenas o ponto 6.",
         ],
       },
+      {
+        type: "static-cells",
+        ariaLabel: "Seis celas Braille, cada uma com todos os pontos exceto um",
+        groups: [
+          { cells: [{ dots: [2, 3, 4, 5, 6], caption: "Sem ponto 1" }] },
+          { cells: [{ dots: [1, 3, 4, 5, 6], caption: "Sem ponto 2" }] },
+          { cells: [{ dots: [1, 2, 4, 5, 6], caption: "Sem ponto 3" }] },
+          { cells: [{ dots: [1, 2, 3, 5, 6], caption: "Sem ponto 4" }] },
+          { cells: [{ dots: [1, 2, 3, 4, 6], caption: "Sem ponto 5" }] },
+          { cells: [{ dots: [1, 2, 3, 4, 5], caption: "Sem ponto 6" }] },
+        ],
+      },
       { type: "image", key: "MAOS_TATEANDO", alt: "Mãos tateando um alfabraille." },
       {
         type: "p",
@@ -353,6 +372,16 @@ export const CHAPTERS: Chapter[] = [
           "Retire os pontos 3 e 6 da cela completa. Restam quatro pontos na parte superior da cela. Esse arranjo é chamado de série superior. O formato costuma lembrar um quadrado. Muitas pessoas associam a um fogão de quatro bocas visto de cima.",
           "Retire os pontos 4, 5 e 6. Restam apenas os três pontos da esquerda. Esse agrupamento forma a coluna da esquerda. Pode lembrar um semáforo na vertical, três botões alinhados ou uma coluna de tomadas.",
           "Retire os pontos 2, 4 e 6. Observe o desenho restante. Muitas pessoas associam a um meio círculo, uma seta ou uma concha.",
+        ],
+      },
+      {
+        type: "static-cells",
+        ariaLabel: "Celas correspondentes aos esquemas associativos",
+        groups: [
+          { cells: [{ dots: [2, 3, 4, 5], caption: "Pontos 2, 3, 4, 5" }] },
+          { cells: [{ dots: [1, 2, 4, 5], caption: "Pontos 1, 2, 4, 5" }] },
+          { cells: [{ dots: [1, 2, 3], caption: "Pontos 1, 2, 3" }] },
+          { cells: [{ dots: [1, 3, 5], caption: "Pontos 1, 3, 5" }] },
         ],
       },
       {
@@ -395,6 +424,31 @@ export const CHAPTERS: Chapter[] = [
       { type: "p", text: "As letras i e j não utilizam o ponto 1, o que já serve como pista perceptiva importante." },
       { type: "p", text: "Observe também as letras em espelho:" },
       { type: "ul", items: ["d e f", "e e i", "h e j"] },
+      {
+        type: "static-cells",
+        pairs: true,
+        ariaLabel: "Pares de letras em espelho",
+        groups: [
+          {
+            cells: [
+              { dots: [1, 4, 5], caption: "d" },
+              { dots: [1, 2, 4], caption: "f" },
+            ],
+          },
+          {
+            cells: [
+              { dots: [1, 5], caption: "e" },
+              { dots: [2, 4], caption: "i" },
+            ],
+          },
+          {
+            cells: [
+              { dots: [1, 2, 5], caption: "h" },
+              { dots: [2, 4, 5], caption: "j" },
+            ],
+          },
+        ],
+      },
       { type: "p", text: "Essas semelhanças devem ser associadas a imagens mentais para evitar inversões." },
       {
         type: "p",
@@ -420,7 +474,6 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Quando a primeira série está bem compreendida, o avanço para as demais letras acontece de forma lógica. Conheça algumas palavras.",
       },
-      { type: "image", key: "PALAVRAS_5", alt: "Cinco palavras em Braille e em tinta: bacia, cabide, ficha, geada, jaca." },
       { type: "h3", text: "Segunda série de sinais: do k ao t" },
       { type: "p", text: "Forma-se acrescentando o ponto 3 a cada uma das letras da primeira série." },
       {
@@ -428,6 +481,7 @@ export const CHAPTERS: Chapter[] = [
         text: "Ou seja, não são novos desenhos. São os mesmos formatos já conhecidos, com um ponto a mais na parte inferior esquerda da cela.",
       },
       { type: "image", key: "SEGUNDA_SERIE", alt: "Segunda série de sinais (k ao t)." },
+      { type: "image", key: "PALAVRAS_8", alt: "Oito palavras em tinta e em Braille: abelha, amigo, pipoca, tigre, sardinha, noite, jardim, melancia." },
       { type: "h3", text: "Terceira série de sinais: do u ao ç" },
       {
         type: "p",
@@ -438,7 +492,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Essa progressão mostra que o sistema Braille é organizado por variações sobre um mesmo padrão. As letras não são apresentadas como símbolos isolados, mas como desdobramentos de uma lógica interna que o tato já aprendeu a reconhecer.",
       },
-      { type: "image", key: "PALAVRAS_8", alt: "Oito palavras em tinta e em Braille: abelha, amigo, pipoca, tigre, sardinha, noite, jardim, melancia." },
+      { type: "image", key: "PALAVRAS_TERCEIRA", alt: "Cinco palavras em tinta e em Braille: uva, nuvem, viagem, xadrez, palhaço." },
       { type: "h3", text: "Uma exceção no padrão: a letra w" },
       {
         type: "p",
@@ -719,7 +773,7 @@ export const CHAPTERS: Chapter[] = [
         text: "Atua também como consultora em audiodescrição desde 2010, especialmente no campo audiovisual, e como analista em acessibilidade digital, contribuindo para a qualificação de práticas educacionais e culturais acessíveis.",
       },
       { type: "p", text: "e-mail: braillu@gmail.com" },
-      { type: "p", text: "https://instagram.com/braillu" },
+      { type: "link", url: "https://instagram.com/braillu", label: "@braillu no Instagram", external: true },
     ],
   },
 ];
