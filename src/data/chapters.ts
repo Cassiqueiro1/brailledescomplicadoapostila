@@ -544,7 +544,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "A mão esquerda marca o início da linha, deslizando levemente para cima e para baixo, enquanto a mão direita percorre a linha na horizontal. Se o aprendiz for canhoto, inverte-se as mãos: a direita funciona como marcador e a esquerda, leitora.",
       },
-      { type: "image", key: "POSICAO_MAOS", alt: "Imagem da posição das mãos para a leitura em Braille." },
+      { type: "image", key: "POSICAO_MAOS", alt: "Arte gráfica da posição das mãos para a leitura em Braille." },
       {
         type: "p",
         text: "Quando esse movimento se torna natural e linear, o espaçamento pode ser reduzido gradualmente. É importante fazer pausas regulares durante a prática, pois o tato se cansa com facilidade e, em dias frios, a sensibilidade tátil pode ficar reduzida, exigindo ainda mais cuidado com o tempo de atividade.",
