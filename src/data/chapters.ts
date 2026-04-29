@@ -715,6 +715,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Falamos bastante sobre reversibilidade, mas o que isso significa? Reversibilidade é o processo de inversão de lateralidade que acontece entre a leitura e a escrita no Sistema Braille. Na leitura, os pontos são percebidos a partir da coluna da esquerda, composta pelos pontos 1, 2 e 3, e da coluna da direita, composta pelos pontos 4, 5 e 6. Na escrita com reglete e punção, essa lateralidade é invertida. Os pontos 1, 2 e 3 passam a ser perfurados na coluna da direita, e os pontos 4, 5 e 6 na coluna da esquerda. Isso acontece porque a escrita é feita no verso do papel, para que o relevo correto apareça na frente quando o papel é virado. A reversibilidade também pode ser observada na semelhança espacial entre algumas letras do alfabeto Braille, que funcionam como imagens espelhadas entre si, como d/f, e/i, h/j, r/w, y/ç, entre outras. Essa percepção espacial é fundamental no processo de aprendizagem e no desenvolvimento da leitura e da escrita em Braille.",
       },
+      { type: "image", key: "POSICAO_LEITURA_ESCRITA", alt: "Posição da leitura e posição da escrita." },
       { type: "h3", text: "O que é transcrição no contexto do Braille" },
       {
         type: "p",
