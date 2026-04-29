@@ -159,6 +159,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Nesta etapa pré-Braille, atividades táteis e de manuseio como origami, tear de pregos, miçangas e bordados, colagem, pintura com os dedos, modelagem, jogos de tabuleiro, dominó e blocos de montar favorecem o desenvolvimento da sensibilidade tátil e da coordenação bimanual, ao mesmo tempo em que promovem uma exploração orientada do espaço, a percepção de formas, texturas e padrões e a construção de um repertório mental organizado a partir daquilo que é explorado pelas mãos.",
       },
+      { type: "image", key: "MATERIAIS_PRE_BRAILLE", alt: "Exemplos de materiais como dominó, tear, blocos de montar, massa de modelar, jogos de tabuleiro." },
       {
         type: "p",
         text: "Já no ensino do Braille para crianças em alfabetização, o lúdico integra jogos, histórias, desafios táteis e materiais concretos que dialogam com o cotidiano da criança, aproximam a aprendizagem de significado e sentido, mobilizam curiosidade e participação, e desenvolvem coordenação motora fina, orientação espacial, uso das duas mãos e consciência dos pontos na construção da leitura e da escrita.",
