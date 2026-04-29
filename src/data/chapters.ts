@@ -474,7 +474,6 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Quando a primeira série está bem compreendida, o avanço para as demais letras acontece de forma lógica. Conheça algumas palavras.",
       },
-      { type: "image", key: "PALAVRAS_5", alt: "Cinco palavras em Braille e em tinta: bacia, cabide, ficha, geada, jaca." },
       { type: "h3", text: "Segunda série de sinais: do k ao t" },
       { type: "p", text: "Forma-se acrescentando o ponto 3 a cada uma das letras da primeira série." },
       {
@@ -482,6 +481,7 @@ export const CHAPTERS: Chapter[] = [
         text: "Ou seja, não são novos desenhos. São os mesmos formatos já conhecidos, com um ponto a mais na parte inferior esquerda da cela.",
       },
       { type: "image", key: "SEGUNDA_SERIE", alt: "Segunda série de sinais (k ao t)." },
+      { type: "image", key: "PALAVRAS_8", alt: "Oito palavras em tinta e em Braille: abelha, amigo, pipoca, tigre, sardinha, noite, jardim, melancia." },
       { type: "h3", text: "Terceira série de sinais: do u ao ç" },
       {
         type: "p",
@@ -492,7 +492,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Essa progressão mostra que o sistema Braille é organizado por variações sobre um mesmo padrão. As letras não são apresentadas como símbolos isolados, mas como desdobramentos de uma lógica interna que o tato já aprendeu a reconhecer.",
       },
-      { type: "image", key: "PALAVRAS_8", alt: "Oito palavras em tinta e em Braille: abelha, amigo, pipoca, tigre, sardinha, noite, jardim, melancia." },
+      { type: "image", key: "PALAVRAS_TERCEIRA", alt: "Cinco palavras em tinta e em Braille: uva, nuvem, viagem, xadrez, palhaço." },
       { type: "h3", text: "Uma exceção no padrão: a letra w" },
       {
         type: "p",
