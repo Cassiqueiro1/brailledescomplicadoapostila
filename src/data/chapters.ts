@@ -581,7 +581,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Existem alguns tipos mais comuns de reglete: de mesa, de bolso e de página inteira. Existe também a reglete positiva.",
       },
-      { type: "image", key: "TIPOS_REGLETE", alt: "Os 4 tipos de reglete: de mesa, de bolso, de página inteira e positiva." },
+      { type: "image", key: "TIPOS_REGLETE", alt: "Exmplo da colocação da folha na reglete de mesa" },
       {
         type: "p",
         text: "A reglete de mesa é composta por uma base retangular de madeira ou plástico, geralmente com cerca de 31 por 19 centímetros, com prendedor de papel na parte superior e orifícios laterais para encaixe da régua na posição de escrita. Acompanha uma régua de metal ou plástico formada por duas placas unidas por dobradiça. A placa inferior possui a configuração da cela Braille em baixo relevo. A placa superior apresenta pequenas janelas retangulares com reentrâncias por onde desliza a punção. Essa régua costuma ter 4 linhas e 27 celas por linha. Cada cela mede cerca de seis milímetros de altura por quatro milímetros de largura.",
