@@ -424,6 +424,31 @@ export const CHAPTERS: Chapter[] = [
       { type: "p", text: "As letras i e j não utilizam o ponto 1, o que já serve como pista perceptiva importante." },
       { type: "p", text: "Observe também as letras em espelho:" },
       { type: "ul", items: ["d e f", "e e i", "h e j"] },
+      {
+        type: "static-cells",
+        pairs: true,
+        ariaLabel: "Pares de letras em espelho",
+        groups: [
+          {
+            cells: [
+              { dots: [1, 4, 5], caption: "d" },
+              { dots: [1, 2, 4], caption: "f" },
+            ],
+          },
+          {
+            cells: [
+              { dots: [1, 5], caption: "e" },
+              { dots: [2, 4], caption: "i" },
+            ],
+          },
+          {
+            cells: [
+              { dots: [1, 2, 5], caption: "h" },
+              { dots: [2, 4, 5], caption: "j" },
+            ],
+          },
+        ],
+      },
       { type: "p", text: "Essas semelhanças devem ser associadas a imagens mentais para evitar inversões." },
       {
         type: "p",
