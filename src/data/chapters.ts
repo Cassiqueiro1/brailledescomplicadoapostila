@@ -404,6 +404,7 @@ export const CHAPTERS: Chapter[] = [
       },
       { type: "interactive-cell" },
       { type: "p", text: "As letras a, b, c, d, e, f, g, h, i, j formam a primeira série de sinais." },
+      { type: "image", key: "PRIMEIRA_SERIE_SINAIS", alt: "Representação em Braille das letras a, b, c, d, e, f, g, h, i e j — primeira série de sinais." },
       { type: "p", text: "Essas dez letras são as matrizes de todo o alfabeto Braille." },
       {
         type: "ul",
