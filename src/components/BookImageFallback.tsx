@@ -41,6 +41,7 @@ const visualKinds: Record<string, VisualKind> = {
   SEGUNDA_SERIE: "letters",
   TERCEIRA_SERIE: "letters",
   PALAVRAS_8: "letters",
+  PALAVRAS_TERCEIRA: "letters",
   LETRA_W: "letters",
   LINHAS: "letters",
   BRAILLE_ACETATO: "letters",
