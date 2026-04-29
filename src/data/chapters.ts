@@ -773,7 +773,7 @@ export const CHAPTERS: Chapter[] = [
         text: "Atua também como consultora em audiodescrição desde 2010, especialmente no campo audiovisual, e como analista em acessibilidade digital, contribuindo para a qualificação de práticas educacionais e culturais acessíveis.",
       },
       { type: "p", text: "e-mail: braillu@gmail.com" },
-      { type: "p", text: "https://instagram.com/braillu" },
+      { type: "link", url: "https://instagram.com/braillu", label: "@braillu no Instagram", external: true },
     ],
   },
 ];
