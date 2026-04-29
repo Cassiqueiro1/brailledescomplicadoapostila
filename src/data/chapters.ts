@@ -331,6 +331,18 @@ export const CHAPTERS: Chapter[] = [
           "Por fim, retire apenas o ponto 6.",
         ],
       },
+      {
+        type: "static-cells",
+        ariaLabel: "Seis celas Braille, cada uma com todos os pontos exceto um",
+        groups: [
+          { cells: [{ dots: [2, 3, 4, 5, 6], caption: "Sem ponto 1" }] },
+          { cells: [{ dots: [1, 3, 4, 5, 6], caption: "Sem ponto 2" }] },
+          { cells: [{ dots: [1, 2, 4, 5, 6], caption: "Sem ponto 3" }] },
+          { cells: [{ dots: [1, 2, 3, 5, 6], caption: "Sem ponto 4" }] },
+          { cells: [{ dots: [1, 2, 3, 4, 6], caption: "Sem ponto 5" }] },
+          { cells: [{ dots: [1, 2, 3, 4, 5], caption: "Sem ponto 6" }] },
+        ],
+      },
       { type: "image", key: "MAOS_TATEANDO", alt: "Mãos tateando um alfabraille." },
       {
         type: "p",
