@@ -92,7 +92,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Hoje, a presença do Braille atravessa o cotidiano de formas muitas vezes silenciosas, mas profundamente significativas. Ele está em livros de literatura e materiais didáticos, rotuladora, fitas métrica, na Urna Eletrônica brasileira, em embalagens de cosméticos, caixas de medicamentos e rótulos de produtos, em placas de sinalização de ambientes e mapas táteis, nos botões de elevador, cartão de crédito e em controles remotos com marcações nas teclas de ligar e desligar, volume, canais e até no controle de temperatura do ar condicionado. Também aparece na moda, em camisetas, joias e tatuagens, ampliando sua dimensão simbólica e cultural. No brinquedo, aparece no lego Braille Bricks, uma parceria com a Fundação Dorina Nowill. Essa presença espalhada mostra que o Braille permanece vivo, atual e integrado aos espaços sociais, reafirmando seu papel como tecnologia assistiva e comunicação..",
       },
-      { type: "image", key: "BRAILLE_COTIDIANO", alt: "Imagens do Braille no cotidiano: medicamentos, elevadores, urna eletrônica e outros elementos citados." },
+      { type: "image", key: "BRAILLE_COTIDIANO", alt: "Uso do braille em diversas situações do cotidiano como, placa de sinalização, urna eletrônica, mãos lendo em livro braille, caixa de medicamento, elevador." },
     ],
   },
   {
