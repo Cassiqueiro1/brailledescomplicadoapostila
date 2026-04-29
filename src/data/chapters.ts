@@ -460,6 +460,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Nesse momento, já é possível trabalhar pequenas palavras em escala ampliada, permitindo que o aprendiz perceba que aqueles formatos conhecidos começam a formar algo que ele já reconhece.",
       },
+      { type: "image", key: "PALAVRAS_PRIMEIRA_SERIE", alt: "Palavras formadas com a primeira série de sinais: bacia, cabide, ficha, geada e jaca." },
       { type: "h3", text: "Símbolos compostos: indicadores de número e de maiúsculo" },
       {
         type: "p",
