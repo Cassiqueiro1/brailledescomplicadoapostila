@@ -549,7 +549,7 @@ export const CHAPTERS: Chapter[] = [
         type: "p",
         text: "Quando esse movimento se torna natural e linear, o espaçamento pode ser reduzido gradualmente. É importante fazer pausas regulares durante a prática, pois o tato se cansa com facilidade e, em dias frios, a sensibilidade tátil pode ficar reduzida, exigindo ainda mais cuidado com o tempo de atividade.",
       },
-      { type: "image", key: "PESSOA_LENDO", alt: "Pessoa lendo Braille em um livro, placa ou urna." },
+      { type: "image", key: "PESSOA_LENDO", alt: "Mãos lendo Braille em folha." },
       {
         type: "p",
         text: "Nessa metodologia, a leitura vem antes da escrita. O processo de leitura em Braille é mais demorado, envolve mais habilidades sensoriais e motoras e constrói a base que permitirá escrever com segurança depois. Durante a leitura, trabalha-se também a compreensão das letras em espelho e os padrões das séries de sinais. A estrutura do alfabeto Braille é formada por 7 séries de sinais.",
