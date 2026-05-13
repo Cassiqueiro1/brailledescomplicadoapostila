@@ -21,7 +21,7 @@ const Index = () => {
       {/* Hero */}
       <section
         aria-labelledby="hero-title"
-        className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-secondary/40 via-background to-accent/40 p-8 md:p-14 shadow-[var(--shadow-elegant)]"
+className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-secondary/40 via-background to-accent/40 p-8 md:flex md:min-h-[36rem] md:items-center md:p-14 shadow-[var(--shadow-elegant)]"
       >
         <div className="relative z-10 max-w-3xl">
           <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
