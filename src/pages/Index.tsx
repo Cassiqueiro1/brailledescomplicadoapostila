@@ -60,37 +60,6 @@ const Index = () => {
           className="pointer-events-none absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent/40 blur-3xl"
         />
       </section>
-
-      {/* Sumário */}
-      <section aria-labelledby="sumario-title" id="sumario" className="mt-12">
-        <div className="mb-6 flex items-end justify-between">
-          <h2 id="sumario-title" className="text-2xl font-bold text-primary md:text-3xl">
-            <BookOpen className="mb-1 mr-2 inline h-6 w-6" /> Sumário
-          </h2>
-        </div>
-        <ol className="grid gap-4 md:grid-cols-2">
-          {CHAPTERS.map((c) => (
-            <li key={c.slug}>
-              <Link
-                to={`/${c.slug}`}
-                className="group block h-full rounded-2xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:shadow-[var(--shadow-soft)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/40"
-              >
-                {c.number !== undefined && (
-                  <span className="text-xs font-semibold uppercase tracking-wider text-primary/70">
-                    Capítulo {c.number}
-                  </span>
-                )}
-                <h3 className="mt-1 text-lg font-semibold text-foreground group-hover:text-primary">
-                  {c.title.replace(/^Capítulo \d+: ?/, "")}
-                </h3>
-                <p className="mt-2 inline-flex items-center text-sm font-medium text-primary opacity-0 transition group-hover:opacity-100">
-                  Ler agora <ArrowRight className="ml-1 h-4 w-4" />
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </section>
     </div>
   );
 };
