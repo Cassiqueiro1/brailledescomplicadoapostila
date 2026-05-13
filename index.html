@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Braille Descomplicado — Semeando Leitores e Escritores Competentes</title>
@@ -36,6 +38,27 @@
   <meta name="twitter:title" content="Braille Descomplicado — Semeando Leitores e Escritores Competentes">
   <meta property="og:description" content="E-book interativo de Luciane Molina (Braillu) com a metodologia sensorial e significativa para alfabetização em Braille, incluindo cela Braille interativa.">
   <meta name="twitter:description" content="E-book interativo de Luciane Molina (Braillu) com a metodologia sensorial e significativa para alfabetização em Braille, incluindo cela Braille interativa.">
+
+<script>
+  (function (location) {
+    if (location.search.startsWith("?/")) {
+      const decodedPath =
+        location.search
+          .slice(2)
+          .split("&")
+          .map((part) => part.replace(/~and~/g, "&"))
+          .join("?");
+
+      const restoredUrl =
+        location.pathname.replace(/\/$/, "") +
+        "/" +
+        decodedPath +
+        location.hash;
+
+      window.history.replaceState(null, "", restoredUrl);
+    }
+  })(window.location);
+</script>
 </head>
   <body>
     <div id="root"></div>

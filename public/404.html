@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecionando...</title>
+    <script>
+      (function () {
+        const base = "/BrailleDescomplicadoApostila/";
+        const { pathname, search, hash } = window.location;
+
+        if (!pathname.startsWith(base)) {
+          window.location.replace(base);
+          return;
+        }
+
+        const route = pathname.slice(base.length);
+        const query = search ? "&" + search.slice(1) : "";
+        const redirectTo = base + "?/" + route + query + hash;
+
+        window.location.replace(redirectTo);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando...</p>
+  </body>
+</html>
